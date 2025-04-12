@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #009688;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #ff6f00;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #e65c00;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* How It Works Section */
+#how-it-works {
+  background-color: #f1f1f1;
+  padding: 60px 20px;
+}
+
+#how-it-works h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step a {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.step a:hover {
+  color: #009688;
+}
+
+/* Dashboard Section */
+#dashboard {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info {
+  flex: 1;
+  text-align: left;
+}
+
+.user-info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.rewards {
+  flex: 1;
+  text-align: left;
+}
+
+.rewards h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.rewards ul {
+  list-style: none;
+}
+
+.rewards ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn-redeem {
+  background-color: #ff6f00;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-redeem:hover {
+  background-color: #e65c00;
+}
+
+/* Get Involved Section */
+#get-involved {
+  background-color: #009688;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#get-involved h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#get-involved .btn-submit {
+  background-color: #ff6f00;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#get-involved .btn-submit:hover {
+  background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* Modal (If you have one in your HTML) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.close {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff6f00;
+}

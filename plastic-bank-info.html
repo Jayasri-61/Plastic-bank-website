@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plastic Bank Info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      transition: all 0.3s ease;
+    }
+
+    /* Header Section */
+    h1 {
+      font-size: 2.5em;
+      text-align: center;
+      margin-top: 50px;
+      color: #28a745;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      text-align: center;
+      margin: 0 20px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 200px;
+      margin: 30px auto;
+    }
+
+    .back-button:hover {
+      background-color: #218838;
+    }
+
+    .back-button:active {
+      background-color: #1c7a32;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1em;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Content -->
+  <div style="padding-top: 80px;"> <!-- Adjust for fixed header -->
+    <h1>Plastic Bank</h1>
+    <p>
+      Plastic Bank is a pioneering social enterprise that addresses the interconnected global challenges of plastic pollution and poverty by transforming plastic waste into a valuable economic resource through a community-driven recycling ecosystem. Individuals collect and categorize plastic waste, report it via a Google Form detailing the type and weight, and submit it for pickup by a Plastic Bank employee who verifies and transports the materials to a Plastic Bank facility.
+    </p>
+    <p>
+      Verified contributions are rewarded with digital credit points, which are tracked in a secure user dashboard where participants can view their balance, collection history, and redeem points for essential goods, services, or e-commerce vouchers through current and future partnerships with platforms like Amazon and Meesho. Once collected, the plastic is stored and forwarded to authorized recycling industries or other sustainable channels, ensuring proper waste processing and circular reuse.
+    </p>
+    <p>
+      This innovative model not only promotes a circular economy and reduces ocean-bound plastic, but also creates economic opportunities for vulnerable communities, fosters eco-conscious behavior, and empowers individuals with meaningful incentives for environmental stewardship. By integrating digital technology, social innovation, and environmental responsibility, Plastic Bank presents a scalable, inclusive, and impactful solution for building a cleaner, more equitable, and sustainable future.
+    </p>
+
+    <!-- Back to Home Button -->
+    <a href="main.html" class="back-button" id="backButton">Back to Home</a>
+  </div>
+
+  <script>
+    // Smooth scroll for Back button
+    document.getElementById("backButton").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent default action
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth" // Smooth scrolling
+      });
+
+      // Redirect after scroll animation completes (2s in this case)
+      setTimeout(() => {
+        window.location.href = "main.html"; // Redirect to main page
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>

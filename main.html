@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plastic Bank</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"> Plastic Bank</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="login.html" class="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Transforming Plastic Into Opportunity</h1>
+      <p>Empowering communities while cleaning the planet.</p>
+       <button onclick="window.location.href='plastic-bank-info.html'">Learn More</button>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Plastic Bank</h2>
+    <p>
+      Plastic Bank is a pioneering social enterprise that tackles plastic pollution and poverty by converting plastic waste into digital credit points. These points can be redeemed for goods, services, or vouchers through partnerships like Amazon and Meesho.
+    </p>
+  </section>
+
+  <section id="how-it-works" class="section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <a href="collect-and-categorize.html">🧺 Collect & Categorize Plastic</a>
+      </div>
+      <div class="step">
+        <a href="submit-via-google-form.html">📝 Submit via Google Form</a>
+      </div>
+      <div class="step">
+        <a href="pickup-and-verification.html">🚛 Employee Pickup & Verification</a>
+      </div>
+      <div class="step">
+        <a href="earn-credit-points.html">💳 Earn Credit Points</a>
+      </div>
+      <div class="step">
+        <a href="redeem-for-goods.html">🎁 Redeem for Goods & Vouchers</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboard" class="section">
+    <h2>User Dashboard</h2>
+    <div class="dashboard">
+      <div class="user-info">
+        <h3>Hello, Riya 👋</h3>
+        <p><strong>Points Balance:</strong> 1,250</p>
+        <p><strong>Plastics Submitted:</strong> 18.5 kg</p>
+      </div>
+      <div class="rewards">
+        <h4>Available Rewards</h4>
+        <ul>
+          <li>🛒 ₹100 Amazon Voucher - 1,000 pts</li>
+          <li>📦 Free Grocery Pack - 750 pts</li>
+          <li>🎓 Education Kit - 1,500 pts</li>
+        </ul>
+        <button class="btn-redeem" onclick="redeemReward()">Redeem</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-involved" class="section">
+    <h2>Get Involved</h2>
+    <p>Want to become a plastic hero? Submit your collected plastic now and start earning!</p>
+    <button class="btn-submit" onclick="window.location.href='submit-plastic.html'">Submit Plastic</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Plastic Bank |</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

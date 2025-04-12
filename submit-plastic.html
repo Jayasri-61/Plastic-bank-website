@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Plastic</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      width: 50%;
+      margin: 50px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #28a745;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    button:active {
+      background-color: #1c7a32;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Submit Your Plastic</h2>
+    <form id="submit-plastic-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+      <label for="kg">Plastic Weight (in kg)</label>
+      <input type="number" id="kg" name="kg" required placeholder="Enter weight of plastic">
+
+      <label for="category">Plastic Category</label>
+      <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <option value="PET">PET (Polyethylene Terephthalate)</option>
+        <option value="HDPE">HDPE (High-Density Polyethylene)</option>
+        <option value="LDPE">LDPE (Low-Density Polyethylene)</option>
+        <option value="PP">PP (Polypropylene)</option>
+        <option value="Others">Others</option>
+      </select>
+
+      <label for="products">Products Purchased (Optional)</label>
+      <input type="text" id="products" name="products" placeholder="List products purchased (if any)">
+
+      <button type="submit">Submit Plastic</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('submit-plastic-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const kg = document.getElementById('kg').value;
+      const category = document.getElementById('category').value;
+      const products = document.getElementById('products').value;
+
+      if (name && kg && category) {
+        alert(`Plastic Submission Successful!\nName: ${name}\nWeight: ${kg} kg\nCategory: ${category}\nProducts Purchased: ${products || 'N/A'}`);
+        // Here you can send the form data to the server using AJAX or fetch
+        // For now, let's clear the form
+        document.getElementById('submit-plastic-form').reset();
+      } else {
+        alert('Please fill out all required fields!');
+      }
+    });
+  </script>
+
+</body>
+</html>
