@@ -12,6 +12,7 @@ Plastic Bank is a pioneering social enterprise that addresses the interconnected
 ![image](https://github.com/user-attachments/assets/bfc3cfc5-80c9-402e-87f5-68c63932eb7e)
 ![image](https://github.com/user-attachments/assets/7948376e-f4ba-49dc-8fe7-ecac5e1bb3b2)
 ![image](https://github.com/user-attachments/assets/a89f48ef-38ab-43cd-8d64-d7f66c37a788)
+![image](https://github.com/user-attachments/assets/0f5f1a12-ba4a-4715-a8ae-387f11505a9d)
 
 
 
